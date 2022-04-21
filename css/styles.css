@@ -498,6 +498,9 @@ footer {
   padding: 50px 15px;
   text-align: center;
 }
+#skills img{
+    margin: 5px;
+}
 #skills h2 {
   color: #374054;
   margin-bottom: 50px;
