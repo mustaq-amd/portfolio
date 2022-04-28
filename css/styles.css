@@ -67,16 +67,17 @@ header {
   animation-duration: 0.75s;
 }
 header ul {
-  display: inline-block;
+  /* display: inline-block; */
   background: #fff;
   text-align: center;
   padding: 10px;
   margin: 0;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  /* border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; */
 }
 header li {
   display: inline-block;
+  margin: 0 10px;
 }
 header a {
   display: block;
@@ -232,7 +233,8 @@ footer {
 }
 #lead-content {
   position: absolute;
-  z-index: 10;
+  /* z-index: 10; */
+  z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -245,7 +247,7 @@ footer {
 #lead-content h1 {
   color: #fff;
   font-weight: 900;
-  font-size: 5em;
+  font-size: 3em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   line-height: 0.9em;
@@ -255,6 +257,10 @@ footer {
   font-weight: 500;
   font-size: 2.25em;
   margin-bottom: 15px;
+}
+#lead-content img{
+  width: 200px;
+  height: 200px;
 }
 #lead-overlay {
   position: absolute;
@@ -273,7 +279,8 @@ footer {
   right: 0;
   width: 100%;
   text-align: center;
-  z-index: 10;
+  /* z-index: 10; */
+  z-index: 2;
   bottom: 15px;
   color: #fff;
 }
@@ -318,6 +325,7 @@ footer {
   padding: 50px 15px;
   text-align: center;
   border-bottom: 1px solid #dcd9d9;
+  background-color: #f2f2f5;
 }
 #experience h2 {
   color: #374054;
@@ -410,6 +418,7 @@ footer {
   padding: 50px 15px 20px 15px;
   border-bottom: 1px solid #dcd9d9;
   text-align: center;
+  background-color: #f2f2f5;
 }
 #education h2 {
   color: #374054;
@@ -421,6 +430,7 @@ footer {
   padding: 15px;
   border: 1px solid #dcd9d9;
   text-align: left;
+  background-color: white;
 }
 .education-block h3 {
   font-weight: 500;
@@ -451,6 +461,7 @@ footer {
   padding: 50px 15px;
   border-bottom: 1px solid #dcd9d9;
   text-align: center;
+  background-color: white;
 }
 #projects h2 {
   color: #374054;
@@ -461,7 +472,7 @@ footer {
   max-width: 900px;
   margin: 0 auto 30px auto;
   overflow: hidden;
-  background: #fff;
+  background: whitesmoke;
   border-radius: 4px;
 }
 .project-image {
@@ -497,9 +508,11 @@ footer {
 #skills {
   padding: 50px 15px;
   text-align: center;
+ border-bottom: 1px solid #dcd9d9;
+  /*  border-top: 1px solid #dcd9d9; */
 }
-#skills img{
-    margin: 5px;
+#skills img {
+  margin: 5px;
 }
 #skills h2 {
   color: #374054;
@@ -742,4 +755,10 @@ footer {
 }
 .heading {
   font-weight: bold;
+}
+
+#menu {
+  position: fixed;
+  width: 100%;
+  /* background-color: black; */
 }
