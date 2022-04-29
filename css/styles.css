@@ -685,6 +685,9 @@ footer {
   #about p {
     text-align: left;
   }
+  .part-a img{
+    margin-left: 0 !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
