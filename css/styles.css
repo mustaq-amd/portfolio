@@ -688,6 +688,12 @@ footer {
   .part-a img{
     margin-left: 0 !important;
   }
+  #about .heading{
+    margin-left: -110px !important;
+  }
+  .project-techstack{
+    grid-gap: 15px !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -761,6 +767,7 @@ footer {
     width: 200px;
     height: 200px;
   }
+  
 }
 .heading {
   font-weight: bold;
