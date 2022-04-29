@@ -824,3 +824,17 @@ footer {
   /* border: 1px solid tomato; */
   width: 70%;
 }
+
+.project-techstack img{
+  width: 25px;
+}
+.project-techstack p{
+  margin-left: 170px;
+  font-weight: 700;
+  font-size: 17px;
+}
+.project-techstack{
+  margin-top: 20px;
+  display: flex;
+  grid-gap: 30px;
+}
