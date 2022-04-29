@@ -829,12 +829,11 @@ footer {
   width: 25px;
 }
 .project-techstack p{
-  margin-left: 170px;
   font-weight: 700;
   font-size: 17px;
 }
 .project-techstack{
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
-  grid-gap: 30px;
+  grid-gap: 29px;
 }
