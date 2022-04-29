@@ -286,12 +286,20 @@
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="post">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" id="sender-email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit" onclick="sendEmail()">Send</button>
-            </form>
+            <form id="form">
+                <div class="field">
+                  <input type="text" name="from_name" id="from_name" placeholder="Name" required>
+                </div>
+                <div class="field">
+                    <input type="text" name="from_mail" id="from_mail" placeholder="Email" required>
+                  </div>
+                <div class="field">
+                  <textarea type="text" name="message" id="message" placeholder="Message"></textarea>
+                </div>
+              
+              
+                <input type="submit" id="button" value="Send Email" style="background-color: white;color: #3498db;">
+              </form>
         </div>
         <!-- End #contact-form -->
     </div>
@@ -331,24 +339,54 @@
         </div>
     </footer>
     <!-- End footer -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Email Sent Successfully..</p>
+        </div>
+      
+      </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('wEi4HQvqDRhonw8vx')
+</script>
 <script>
-    function sendEmail() {
-  let senderEmail = document.getElementById("sender-email").value;
-  alert(senderEmail);
-  Email.send({
-    Host: "smtp.gmail.com",
-    To: "abkhanmustaq@email_address.com",
-    From: senderEmail,
-    Subject: "Sending Email using javascript",
-    Body: "Well that was easy!!",
-  }).then(function (message) {
-    alert("mail sent successfully");
-  });
+  
+  const btn = document.getElementById('button');
+  var modal = document.getElementById("myModal");
+  var span = document.getElementsByClassName("close")[0];
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'service_hshgino';
+   const templateID = 'template_suybyki';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then((res) => {
+        modal.style.display = "block";
+        btn.value = 'Send Email';
+      
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+
+span.onclick = function() {
+  modal.style.display = "none";
 }
 </script>
