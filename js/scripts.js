@@ -8,10 +8,12 @@
   // Animate to section when nav is clicked
   $("header a").click(function (e) {
     // Treat as normal link if no-scroll class
+    alert("clicked");
     if ($(this).hasClass("no-scroll")) return;
 
     e.preventDefault();
     var heading = $(this).attr("href");
+    
     var scrollDistance = $(heading).offset().top;
 
     $("html, body").animate(
@@ -99,5 +101,3 @@
     });
   });
 })(jQuery);
-
-

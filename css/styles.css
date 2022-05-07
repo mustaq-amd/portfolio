@@ -184,7 +184,7 @@ footer {
 .btn-rounded-white {
   display: inline-block;
   color: #fff;
-  padding: 15px 25px;
+  padding: 10px 20px;
   border: 3px solid #fff;
   border-radius: 30px;
   transition: 0.5s ease all;
@@ -312,7 +312,7 @@ footer {
   }
 }
 #about {
-  padding: 75px 15px;
+  padding: 80px 15px;
   border-bottom: 1px solid #dcd9d9;
 }
 #about h2 {
@@ -330,6 +330,7 @@ footer {
 }
 #experience h2 {
   color: #374054;
+  margin-top: 15px;
 }
 #experience-timeline {
   margin: 30px auto 0 auto;
@@ -416,7 +417,7 @@ footer {
   color: #374054;
 }
 #education {
-  padding: 50px 15px 20px 15px;
+  padding: 65px 15px 20px 15px;
   border-bottom: 1px solid #dcd9d9;
   text-align: center;
   background-color: #f2f2f5;
@@ -459,7 +460,7 @@ footer {
   padding: 0 0 0 15px;
 }
 #projects {
-  padding: 50px 15px;
+  padding: 65px 15px;
   border-bottom: 1px solid #dcd9d9;
   text-align: center;
   background-color: white;
@@ -508,7 +509,7 @@ footer {
   display: none;
 }
 #skills {
-  padding: 50px 15px;
+  padding: 65px 15px;
   text-align: center;
   border-bottom: 1px solid #dcd9d9;
   /*  border-top: 1px solid #dcd9d9; */
@@ -537,7 +538,7 @@ footer {
   font-size: 1.2em;
 }
 #contact {
-  padding: 50px 15px;
+  padding: 70px 15px;
   background: #3498db;
   text-align: center;
 }
@@ -846,4 +847,7 @@ footer {
   margin-top: 50px;
   display: flex;
   grid-gap: 29px;
+}
+#mobile{
+  text-decoration-line: none;
 }
